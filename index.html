@@ -16,10 +16,11 @@
     <div class="navbar">
         <div class="logo">
             <img src="logo\store\logo.jpeg" alt="" width="125px">
+            
 
         </div>
         <nav>
-            <ul>
+            <ul id="MenuItem">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
@@ -30,6 +31,7 @@
 
         </nav>
             <img src="logo\cart.png" alt="" width="30px" height="30px">
+            <img src="logo\menu.png" alt="" class="menu-icon" onclick="menutog()">
     </div>
     <div class="row">
         <div class="col2">
@@ -227,6 +229,18 @@
     </div>
 
 </div>
+<script>
+    var MenuItem = document.getElementById("MenuItem");
+    MenuItem.style.maxHeight ="0px";
 
+    function menutog(){
+        if(MenuItem.style.maxHeight == "0px"){
+            MenuItem.style.maxHeight ="200px"
+        }
+        else{
+            MenuItem.style.maxHeight ="0px"
+        }
+    }
+</script>
 </body>
 </html>
